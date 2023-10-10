@@ -1,0 +1,7 @@
+#home {
+  background: linear-gradient(rgb(0,0, 100) 10%, rgb(0,0, 150) 80%, rgb(0,0, 100) 100%);
+}
+
+main {
+  padding: 1rem;
+}

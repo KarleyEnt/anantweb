@@ -1,0 +1,103 @@
+.top-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: auto;
+  width: 55%;
+  z-index: 98;
+  margin-bottom: 1rem;
+}
+
+.topNavigationBar {
+  display: flex;
+  flex-direction: row;
+  float: right;
+  background-color: white;
+  overflow: hidden;
+  width: 0;
+  min-width: 0;
+  max-width: 83%;
+  height: 2.5rem;
+  color: rgb(0, 0, 150);
+}
+
+.topNavigationBarOpen {
+  animation: 1s topNavigationBarFrameOpen ease-out;
+  animation-fill-mode: forwards;
+  width: auto;
+  min-width:83%;
+  max-width: 83%;
+  min-height: 2.5rem;
+  height: auto;
+  overflow: hidden;
+}
+
+.topNavigationBarClosed {
+  animation: topNavigationBarFrameClose 1s ease-out forwards;
+  width: 0;
+  min-width: 0;
+  max-width: 0;
+  min-height: 2.5rem;
+  height: auto;
+  background-color: transparent;
+  color: white;
+}
+
+.top-nav-items {
+  display: inline-block;
+  width: 7rem;
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+@keyframes topNavigationBarFrameClose {
+  0% {
+    max-height: 2.5rem;
+    width: 83%;
+    max-width: 83%;
+  }
+
+  100% {
+    width: 0%;
+    min-width: 0%;
+    max-width: 0%;
+  }
+}
+
+@keyframes topNavigationBarFrameOpen {
+  0% {
+    max-height: 2.5rem;
+    width: 0%;
+    min-width: 0%;
+    max-width: 0%;
+  }
+
+  100% {
+    max-height: auto;
+    width: 83%;
+    max-width: 83%;
+  }
+}
+
+.topNavigationBarButton {
+  min-height: 2.5rem;
+  height: auto;
+  min-width: 100px;
+  width: auto;
+  border: 0;
+  margin: 0;
+  font-size: 2rem;
+  padding: 0;
+  float: right;
+  color: white;
+  background-color: transparent;
+}
+
+.buttonOpen {
+  color: rgb(0, 0, 150);
+  background-color: white;
+}

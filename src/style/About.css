@@ -1,0 +1,138 @@
+#about {
+  height: 90vh;
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+
+#aboutHeader {
+  width: 80%;
+  height: 80%;
+  background-color: rgb(0,0, 150);
+  color: white;
+  margin: 0 auto;
+  display: grid;
+  word-break: break-word;
+  grid-template-areas: 'heading1 devCard' 'introName devCard' 'introText  devCard' 'introText devCard';
+  padding: 1rem;
+  gap: 1rem;
+  box-shadow: 0 0 50px 2px red;
+}
+
+#heading1 {
+  margin-top: 0;
+  grid-area: heading1;
+}
+
+.introName {
+  grid-area: introName;
+}
+
+#introText {
+  grid-area: introText;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+#devPhoto {
+  grid-area: devPhoto;
+  height: 80%;
+  max-height: 15rem;
+  object-fit: cover;
+  width: 100%;
+  border: 1px solid transparent;
+  border-bottom: 5px solid white;
+  border-radius: 3% 3% 0 0;
+}
+
+#aboutPhotoTitle {
+  grid-area: aboutPhotoTitle;
+  margin: 0;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 5%;
+  justify-content: center;
+}
+
+#devCard {
+  width: 12rem;
+  grid-area: devCard;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+#devCardRotate {
+  text-align: center;
+  position: relative;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 5px solid white;
+  box-shadow: 0 0 10px 3px red;
+  border-radius: 5%;
+  height: 100%;
+  width: 11rem;
+}
+
+#devCard:hover #devCardRotate {
+  transform: rotateY(180deg);
+}
+
+#devCardFront, #devCardBack {
+  position: absolute;
+  backface-visibility: hidden;
+  border: 1px solid transparent;
+  border-radius: 5%;
+}
+
+#devCardBack {
+  transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 500px) {
+  #aboutHeader {
+    width: 80%;
+    height: 50%;
+    background-color: rgb(0,0, 150);
+    color: white;
+    margin: 0 auto;
+    display: grid;
+    /* word-break: break-word; */
+    grid-template-areas: 'heading1 heading1' 'introName devCard' 'introName  devCard' 'introName devCard';
+    padding: 1rem;
+    gap: 1rem;
+    /* box-shadow: 0 0 50px 2px red; */
+  }
+
+  #heading1 {
+    font-size: 10px;
+    color: red;
+  }
+
+  #introName {
+    font-size: 10px;
+    color: red;
+  }
+
+  header {
+    grid-template-areas:'heading1'
+                       'introName'
+                       'aboutPhotoTitle';
+    text-align: center
+  }
+  #introText {
+    display: none;
+  }
+  
+  #devPhoto {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 850px) {
+  header {
+    grid-template-areas: 'heading1 heading1 heading1' 'introName introName introName' 'introText introText devPhoto' 'aboutPhotoTitle aboutPhotoTitle aboutPhotoTitle';
+  }
+}

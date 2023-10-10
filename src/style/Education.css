@@ -1,0 +1,109 @@
+#education {
+  height: 80vh;
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+
+#educationBody {
+  position: relative;
+  background-color: rgb(0,0, 150);
+  width: 80%;
+  margin: 0 auto;
+  height: 50vh;
+  box-shadow: 0 0 50px 5px red;
+}
+
+#educationBody .section-header {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+  color: white;
+  border-bottom: 2px solid white;
+  padding: 0.5rem 0 0.5rem 0;
+}
+
+.eduHeading4, .eduHeading5 {
+  margin-top: 0;
+}
+
+.timeline-with-nav {
+  display: flex;
+  width: 100%;
+  background-color: rgb(0,0, 150);
+}
+
+.timeline-btn {
+  display: inline-block;
+  background-color: rgb(0,0, 150);
+  color: white;
+  width: 5%;
+  border: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.timeline {
+  display: inline-block;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  background-color: blue;
+  color: white;
+  padding-top: 1rem;
+}
+
+.timeline-line {
+  content: '';
+  width: 100%;
+  height: 0.1rem;
+  background-color: white;
+  margin: 1rem 0 1rem 0;
+}
+
+.timeline-container {
+  width: 300%;
+}
+
+.container {
+  position: relative;
+  color: white;
+  background-color: blue;
+  display: inline-block;
+  width: 33.33333%;
+  padding: 1rem 0;
+}
+
+.container-list {
+  list-style-type: none;
+  width: 50%;
+  height: 150px;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.container1::before {
+  content: '2017-2021';
+  position: absolute;
+  top: -2.5rem;
+  left: 45%;
+  margin: 0 auto;
+}
+
+.container2::before {
+  content: '2016-2017';
+  position: absolute;
+  top: -2.5rem;
+  left: 45%;
+  margin: 0 auto;
+}
+
+.container3::before {
+  content: '2014-2015';
+  position: absolute;
+  top: -2.5rem;
+  left: 45%;
+  margin: 0 auto;
+}

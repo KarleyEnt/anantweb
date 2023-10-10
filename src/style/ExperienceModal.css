@@ -1,0 +1,36 @@
+.expModal {
+  position: absolute;
+  background-color: blue;
+  width: 850px;
+  height: 600px;
+  z-index: 10;
+  border: 5px solid white;
+  border-radius: 3%;
+  left: 20%;
+  top: 15%;
+  z-index: 99;
+}
+.exp-modal-header {
+  padding: 10px;
+  background-color: blue;
+  border-bottom: 5px solid white;
+  color: white;
+  border-radius: 30% 30% 0 0;
+}
+.exp-modal-header-exit {
+  float: right;
+  width: 1rem;
+  text-align: center;
+  color: white;
+}
+.expModalImgDiv {
+  height: 480px;
+  margin: 0;
+}
+.exp-modal-skill-overlay {
+  position: absolute;
+  width: 800px;
+  height: 500px;
+  background-color: rgba(0, 0, 155, 0.3);
+  border-radius: 3%;
+}

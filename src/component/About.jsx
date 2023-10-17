@@ -24,12 +24,13 @@ const About = () => {
               <h2>Anant Wadhwani</h2>
               {/* <h3>Web Developer</h3> */}
               {/* <p>Profecient in:</p> */}
-              <p>MERN Stack</p>
-              <p>Blockchain</p>
-              <p>WebGPU</p>
-              <p>NextJS</p>
-              <p>VueJS</p>
-              <p>AWS</p>
+              <div id='devCardBackList'>
+                <p>MongoDb</p>
+                <p>Express</p>
+                <p>ReactJs</p>
+                <p>NodeJs</p>
+                <p>Blockchain</p>
+              </div>
             </div>
           </div>
         </div>

@@ -27,10 +27,61 @@
   height: 480px;
   margin: 0;
 }
+.exp-img {
+  width: 100%;
+  height: 100%;
+}
+#skillList {
+  position: absolute;
+  width: 840px;
+  height: 530px;
+  background-color: rgba(0, 0, 155, 0.8);
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+}
 .exp-modal-skill-overlay {
   position: absolute;
-  width: 800px;
-  height: 500px;
+  width: 840px;
+  height: 530px;
   background-color: rgba(0, 0, 155, 0.3);
-  border-radius: 3%;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3%;
+}
+
+@media only screen and (max-width:500px) {
+  .expModal {
+    position: absolute;
+    background-color: blue;
+    width: auto;
+    height: auto;
+    z-index: 10;
+    border: 5px solid white;
+    border-radius: 3%;
+    left: 0;
+    top: 35%;
+    z-index: 99;
+  }
+  .expModalImgDiv {
+    height: auto;
+    margin: 0;
+  }
+  .exp-img {
+    width: 350px;
+    height: 300px;
+  }
+  #skillList {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(0, 0, 155, 0.8);
+    z-index: 1;
+  }
+  .exp-modal-skill-overlay {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: rgba(0, 0, 155, 0.3);
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3%;
+  }
 }

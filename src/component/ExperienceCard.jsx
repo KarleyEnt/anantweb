@@ -4,7 +4,7 @@ import ExperienceModal from "./ExperienceModal";
 import '../style/ExperienceCard.css'
 
 const ExperienceCard = (props) => {
-  const {expDivheader, img, title, year, socialLinks, socialImgs} = props;
+  const {expDivheader, img, title, year, socialLinks, socialImgs, skills} = props;
   const dragRefDiv = useRef(null);
   const [displayExpModal, setDisplayExpModal] = useState(false);
   const [displayExpOverlay, setDisplayExpOverlay] = useState(false);
@@ -20,7 +20,7 @@ const ExperienceCard = (props) => {
 
   return (
     <>
-      {displayExpModal ? <ExperienceModal title={title} socialLinks={socialLinks} socialImgs={socialImgs} img={img} handleExpImgDivClick={handleExpImgDivClick}/> : null }
+      {displayExpModal ? <ExperienceModal title={title} socialLinks={socialLinks} socialImgs={socialImgs} img={img} handleExpImgDivClick={handleExpImgDivClick} skills={skills} /> : null }
       <div className='expDiv' ref={dragRefDiv} onMouseDown={(e) => dragMouseDown(e, dragRefDiv)}>
         <div className='expDivheader'>{expDivheader}</div>
         <div

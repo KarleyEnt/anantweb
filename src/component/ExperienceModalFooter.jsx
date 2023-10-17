@@ -1,24 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import '../style/ExperienceModalFooter.css';
 
 const ExperienceModalFooter = (props) => {
-  const { skills, socialLinks, socialImgs, displayExpModalSkillOverlay, setDisplayExpModalSkillOverlay } = props;
-  const [skillsPopUp, setSkillsPopUp] = useState(null);
+  const { skills, socialLinks, socialImgs, skillsPopUp, setSkillsPopUp } = props;
 
   let skillBtn = null;
-  let skillList = null;
   if (skills.length) {
-    skillBtn = <button className='experience-modal-skill-btn' onClick={() => {setSkillsPopUp(!skillsPopUp); setDisplayExpModalSkillOverlay(!displayExpModalSkillOverlay);}}>Skills</button>
-    skillList = (
-      
-        <div id='' onClick={(e) => e.stopPropagation()}>
-          <ul className="">
-            {skills.map((skill) =>
-              <li className="">{skill}</li>
-            )}
-          </ul>
-        </div> 
-    );
+    skillBtn = <button className='experience-modal-skill-btn' onClick={() => {setSkillsPopUp(!skillsPopUp);}}>{skillsPopUp ? 'X': 'Skills'}</button>
   };
 
   return (
@@ -26,20 +14,19 @@ const ExperienceModalFooter = (props) => {
       <div className="experience-modal-skill-overlay">
         <ul className='social-list'>
           {socialLinks.map((socialLink, index) => {
-            return <li className='social-list-item'>
+            return <li className='social-list-item' key={`socialLink${index}`}>
               <a className='social-list-item-link'
                 href={socialLink}
                 target='_blank'
                 rel='external
                 noreferrer'>
-                <img className="exp-modal-social-img" src={socialImgs[index]} alt={`socialImg${index}`} loading='lazy' />
+                <img className="exp-modal-social-img" src={socialImgs[index]} alt={`social ${index+1}`} loading='lazy' />
               </a>
             </li>
           })}
         </ul>
         <div className="expModalFooterSkill">
           {skillBtn}
-          {skillsPopUp ? skillList : null}
         </div>
       </div>
     </div>

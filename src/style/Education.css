@@ -7,11 +7,11 @@
 
 #educationBody {
   position: relative;
-  background-color: rgb(0,0, 150);
+  background-color: rgb(0, 0, 150);
   width: 80%;
   margin: 0 auto;
   height: 50vh;
-  box-shadow: 0 0 50px 5px red;
+  box-shadow: 0 0 50px 5px white;
 }
 
 #educationBody .section-header {
@@ -23,19 +23,20 @@
   padding: 0.5rem 0 0.5rem 0;
 }
 
-.eduHeading4, .eduHeading5 {
+.eduHeading4,
+.eduHeading5 {
   margin-top: 0;
 }
 
 .timeline-with-nav {
   display: flex;
   width: 100%;
-  background-color: rgb(0,0, 150);
+  background-color: rgb(0, 0, 150);
 }
 
 .timeline-btn {
   display: inline-block;
-  background-color: rgb(0,0, 150);
+  background-color: rgb(0, 0, 150);
   color: white;
   width: 5%;
   border: 0;
@@ -106,4 +107,32 @@
   top: -2.5rem;
   left: 45%;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 500px) {
+
+  #educationBody {
+    width: 100%;
+  }
+
+  .timeline {
+    margin: 1px solid transparent;
+  }
+
+  .timeline-btn {
+    font-size: 1rem;
+  }
+
+  .timeline-container {
+    height: 334px;
+    margin-top: 1rem;
+  }
+
+  .timeline-line {
+    margin: 0 0 1rem 0;
+  }
+
+  .container {
+    height: 100%;
+  }
 }

@@ -1,5 +1,8 @@
 #home {
-  background: linear-gradient(rgb(0,0, 100) 10%, rgb(0,0, 150) 80%, rgb(0,0, 100) 100%);
+  /* background: linear-gradient(rgb(0,0, 100) 10%, rgb(0,0, 150) 80%, rgb(0,0, 100) 100%); */
+  background-image: url('../util/photo/bc.png');
+  background-position: center;
+  background-size: cover;
 }
 
 main {

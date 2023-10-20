@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div id='about'>
       <header id='aboutHeader'>
-        <h1 id='heading1'>Here to bring your imagination to the internet</h1>
+        <h1 id='heading1'>Here to bring your imagination to the internet!</h1>
         {/* <section className='intro'> */}
           <p id='introName'>Hello! I am Anant Wadhwani.</p>
           <p id='introText'>I bring with me a complete solution to making your website available on the internet.

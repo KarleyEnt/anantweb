@@ -1,7 +1,10 @@
 #home {
-  /* background: linear-gradient(rgb(0,0, 100) 10%, rgb(0,0, 150) 80%, rgb(0,0, 100) 100%); */
-  background-image: url('../util/photo/bc.png');
-  background-position: center;
+  /* background: linear-gradient(rgb(0,0, 100) 10%, rgb(24, 115, 214) 80%, rgb(0,0, 100) 100%); */
+  /* background-image: url('../util/photo/bc.png'); */
+  /* background-position: center; */
+  /* background-size: cover; */
+  /* background-color: rgb(66,103,178); */
+  background-image: url(../util/photo/wallpaper1.jpg);
   background-size: cover;
 }
 

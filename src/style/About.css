@@ -8,14 +8,15 @@
 #aboutHeader {
   width: 80%;
   height: 80%;
-  background-color: rgb(0,0, 150);
+  background-color: rgb(24, 115, 214);
   color: white;
   margin: 0 auto;
   display: grid;
   grid-template-areas: 'heading1 devCard' 'introName devCard' 'introText  devCard' 'introText devCard';
   padding: 1rem;
   gap: 1rem;
-  box-shadow: 0 0 50px 2px white;
+  box-shadow: 0 0 15px 0 white;
+  border-radius: 20px;
 }
 
 #heading1 {
@@ -48,8 +49,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 5px solid white;
-  box-shadow: 0 0 10px 3px white;
+  border: 2px solid white;
+  box-shadow: 0 0 5px 1px white;
   border-radius: 5%;
   height: 100%;
   width: 11rem;
@@ -95,7 +96,7 @@
 @media only screen and (max-width: 500px) {
   
   #aboutHeader {
-    width: 100%;
+    width: 90%;
     height: 70%;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;

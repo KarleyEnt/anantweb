@@ -17,7 +17,7 @@ const Footer = () => {
         </li>
       </div>
       <div>
-        <button id='skillsBtn' className={`skills-btn ${skillsPopUp ? 'skills-btn-fixed' : ''}`} onClick={() => setSkillsPopUp(!skillsPopUp)}>Created Using</button>
+      <button id='skillsBtn' className={`skills-btn ${skillsPopUp ? 'skills-btn-fixed' : ''}`} onClick={() => setSkillsPopUp(!skillsPopUp)}>Created Using</button>
       </div>
         {skillsPopUp ?  <div className="footerPopUpOverlay" onClick={() => setSkillsPopUp(false)}>
           <div id='footerPopUp' onClick={(e) => e.stopPropagation()}>
